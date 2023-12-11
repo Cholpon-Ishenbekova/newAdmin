@@ -1,7 +1,8 @@
 import React from "react";
 import "./single.scss";
 import Navbar from "../../components/navbar/Navbar";
-// import Chart from '../../components/chart/Chart'
+import TimeLIst1 from "../../components/time_list/TimeLIst1";
+
 
 const Single = () => {
   return (
@@ -40,12 +41,10 @@ const Single = () => {
         <div className="right">
           <div className="item">
             <div className="details">
-              <h1 className="itemTitle">Statitics</h1>
-              <ul>
-                <li>Day</li>
-                <li>Week</li>
-                <li>Month</li>
-              </ul>
+              <h1 className="itemTitle">Time List</h1>
+              <div className="time_list">
+                <TimeLIst1 />
+              </div>
             </div>
           </div>
         </div>
@@ -55,3 +54,6 @@ const Single = () => {
 };
 
 export default Single;
+
+
+        
