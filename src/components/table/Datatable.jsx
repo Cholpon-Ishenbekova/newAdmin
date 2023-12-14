@@ -13,6 +13,9 @@ const Datatable = ({ department }) => {
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
+  const handleEdit = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
 
   const actionColumn = [
     {
@@ -25,6 +28,12 @@ const Datatable = ({ department }) => {
             <Link to=":userId" style={{ textDecoration: "none" }}>
               <div className="viewButton">View</div>
             </Link>
+            <div
+              className="editButton"
+              onClick={() => handleEdit(params.row.id)}
+            >
+              Edit
+            </div>
             <div
               className="deleteButton"
               onClick={() => handleDelete(params.row.id)}

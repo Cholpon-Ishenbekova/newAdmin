@@ -7,6 +7,9 @@ function Navbar() {
     <div className="navbar">
       <div className="wrapper">
         <div className="items">
+        <Link to="/dashboard" style={{ textDecoration: "none" }}>
+            <div className="item">Dashboard</div>
+          </Link>
           <Link to="/" style={{ textDecoration: "none" }}>
             <div className="item">Record</div>
           </Link>

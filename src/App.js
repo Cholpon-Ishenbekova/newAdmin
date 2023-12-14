@@ -9,6 +9,7 @@ import IT from './pages/IT_staff/IT';
 import Single from './pages/single_staff/Single';
 import NewStaff from './pages/new_staff/NewStaff';
 import { userInputs } from "./formSource";
+import Dashboard from './pages/dashboard/Dashboard';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Routes>
           <Route path='/'>
             <Route index element={<Record />} />
+            <Route path='dashboard'>
+              <Route index element={<Dashboard />}></Route>
+            </Route>
             <Route path='department'>
               <Route index element={<Department />} />
               <Route path='Kitchen'>

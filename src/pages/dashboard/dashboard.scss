@@ -1,0 +1,27 @@
+.dashboard {
+    display: flex;
+    max-height: 100vh;
+
+    .dashboardConatiner{
+        flex: 6;
+
+        .widgets {
+            margin-top: 10px;
+            display: flex;
+            width: 960px;
+            padding: 10px;
+            gap: 20px;
+        }
+
+    }
+}
+
+.photo {
+    background-image: url(../dashboard/background.png);
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    // align-items: center;
+    // justify-content: center;
+    height: 100vh;
+}
