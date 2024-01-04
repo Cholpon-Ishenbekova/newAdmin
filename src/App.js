@@ -11,6 +11,7 @@ import NewStaff from './pages/new_staff/NewStaff';
 import { userInputs } from "./formSource";
 import Dashboard from './pages/dashboard/Dashboard';
 
+
 function App() {
   return (
     <div className="App">
@@ -43,7 +44,6 @@ function App() {
                 <Route path=':userId' element={<Single />}></Route>
                 <Route path='new' element={<NewStaff inputs={userInputs} title="Add New Finance Staff"/>}></Route>
               </Route>
-              <Route path="/login" element={<Login />} />
             </Route>
           </Route>
         </Routes>
