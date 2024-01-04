@@ -43,6 +43,7 @@ function App() {
                 <Route path=':userId' element={<Single />}></Route>
                 <Route path='new' element={<NewStaff inputs={userInputs} title="Add New Finance Staff"/>}></Route>
               </Route>
+              <Route path="/login" element={<Login />} />
             </Route>
           </Route>
         </Routes>
